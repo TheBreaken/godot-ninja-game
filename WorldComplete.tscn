@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://House.gd" type="Script" id=1]
+[ext_resource path="res://Object/BrickHouse.png" type="Texture" id=2]
+
+[node name="House" type="Area2D" index="0"]
+
+editor/display_folded = true
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+nextWorld = null
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." index="1"]
+
+visible = false
+build_mode = 0
+polygon = PoolVector2Array( 0, -32, -31, -19, -31, 29, 32, 29, 32, -28, 32, -28 )
+
+
