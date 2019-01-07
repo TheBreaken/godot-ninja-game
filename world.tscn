@@ -69,6 +69,4 @@ nextWorld = "res://world2.tscn"
 
 [connection signal="tree_entered" from="." to="." method="_on_world_tree_entered"]
 
-[connection signal="worldChanged" from="House" to="." method="_on_House_worldChanged"]
-
 

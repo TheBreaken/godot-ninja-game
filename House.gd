@@ -1,5 +1,4 @@
 extends Area2D
-signal worldChanged
 export(String, FILE, "*.tscn") var nextWorld
 
 func _physics_process(delta):
